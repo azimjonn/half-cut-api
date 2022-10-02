@@ -19,5 +19,6 @@ from ImageApi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('postimage/', views.PostImage.as_view())
+    path('postimage/', views.PostImage.as_view()),
+    path('postdata/', views.PostData.as_view()),
 ]

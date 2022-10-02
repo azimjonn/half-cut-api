@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class DataSample(models.Model):
+    image_name = models.CharField(max_length=100)
+    left = models.FloatField()
+    right = models.FloatField()
